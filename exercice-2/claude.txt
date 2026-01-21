@@ -1,0 +1,11 @@
+Crée un tableau Markdown présentant les 5 auteurs ou autrices les plus vendus en France en 2014, classés par nombre d'exemplaires vendus (du plus vendu au moins vendu).
+Le tableau doit contenir les colonnes suivantes :
+* Rang
+* Auteur/Autrice
+* Nombre d'exemplaires vendus en 2014
+* Genre littéraire principal
+* Œuvre(s) phare(s) de l'année
+
+
+RangAuteur/AutriceNombre d'exemplaires vendus en 2014Genre littéraire principalŒuvre(s) phare(s) de l'année1Guillaume Musso1 600 000Roman sentimental / ThrillerCentral Park2Katherine Pancol1 200 000Roman contemporainTrilogie Muchachas3Marc Levy~1 000 000Roman sentimentalUne autre idée du bonheur4Gilles Legardinier890 000Comédie / Feel-goodÇa peut pas rater !5Michel Bussi843 000Polar / ThrillerNe lâche pas ma main, Un avion sans elle
+Source : Classement Le Figaro / GFK publié en janvier 2015
