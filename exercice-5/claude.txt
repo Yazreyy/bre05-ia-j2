@@ -1,0 +1,29 @@
+identifie le problème majeur de mon code et propose moi une solution viable pour y remédier :  <?php  $user_input = $_GET['user_id']; $query = "SELECT * FROM users WHERE id = $user_input"; $result = mysqli_query($conn, $query); echo "Utilisateur trouvé : " . $user_input;  ?>                                      function fetchData(id) {     const url = 'traitement.php?user_id=' + id;     fetch(url)       .then(response => response.json())       .then(data => console.log(data)); }
+
+
+
+php<?php
+// Utilisation de requêtes préparées
+$user_input = $_GET['user_id'];
+
+$stmt = $conn->prepare("SELECT * FROM users WHERE id = ?");
+$stmt->bind_param("i", $user_input); // "i" = integer
+$stmt->execute();
+$result = $stmt->get_result();
+
+if ($result->num_rows > 0) {
+    $user = $result->fetch_assoc();
+    echo "Utilisateur trouvé : " . htmlspecialchars($user['name']);
+} else {
+    echo "Utilisateur non trouvé";
+}
+?>
+javascriptfunction fetchData(id) {
+    // Validation côté client
+    if (!Number.isInteger(Number(id))) return;
+    
+    const url = 'traitement.php?user_id=' + encodeURIComponent(id);
+    fetch(url)
+      .then(response => response.json())
+      .then(data => console.log(data));
+}
