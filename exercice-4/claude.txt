@@ -1,0 +1,14 @@
+Corrige le code html ci-dessous en améliorant son accesibilité    <div>     <h2>Formulaire d'inscription</h2>     <input type="text" id="nom" placeholder="Votre nom">     <input type="email" id="email" placeholder="Votre email">     <button onclick="submitForm()">Envoyer</button> </div>
+
+
+<form>
+    <h2>Formulaire d'inscription</h2>
+    
+    <label for="nom">Votre nom</label>
+    <input type="text" id="nom" name="nom" required>
+    
+    <label for="email">Votre email</label>
+    <input type="email" id="email" name="email" required>
+    
+    <button type="submit">Envoyer</button>
+</form>
