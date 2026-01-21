@@ -1,0 +1,13 @@
+ce que je dit à Claude comme prompt :
+
+Crée un tableau Markdown classant tous les présidents de la Cinquième République française selon leur meilleur score obtenu au second tour d'une élection présidentielle, du pourcentage le plus élevé au plus bas.
+Le tableau doit contenir les colonnes suivantes :
+* Rang
+* Président
+* Année de l'élection
+* Score au second tour (% des suffrages exprimés)
+* Adversaire battu
+Pour les présidents élus plusieurs fois, retiens uniquement leur meilleur score. Inclus tous les présidents de De Gaulle à Macron.
+
+
+RangPrésidentAnnée de l'électionScore au second tour (%)Adversaire battu1Jacques Chirac200282,21Jean-Marie Le Pen2Emmanuel Macron201766,10Marine Le Pen3Georges Pompidou196958,21Alain Poher4Charles de Gaulle196555,20François Mitterrand5François Mitterrand198854,02Jacques Chirac6Nicolas Sarkozy200753,06Ségolène Royal7François Hollande201251,64Nicolas Sarkozy8Valéry Giscard d'Estaing197450,81François Mitterrand
